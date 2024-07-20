@@ -1,5 +1,5 @@
 {% set name = "ypywidgets-textual" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ypywidgets_textual-{{ version }}.tar.gz
-  sha256: 88a34bf3ce47841f8ccb751031286501800e0b47af2a09367a51bbfc181e9dc8
+  sha256: b9b97d7fabe727f3ed08ab80fbd2788c729e1165d74789fcecb550c35557442c
 
 build:
   noarch: python
