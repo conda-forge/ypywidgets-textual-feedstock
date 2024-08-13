@@ -1,5 +1,5 @@
 {% set name = "ypywidgets-textual" %}
-{% set version = "0.4.4" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ypywidgets_textual-{{ version }}.tar.gz
-  sha256: 238071c7356d74a3cd69877f05a95be19dba27b870958691c8bfb70d47423de6
+  sha256: afe398192b6cd260a5c841c91af19e3a381369730eef506518c1a56df742884f
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - hatchling
   run:
     - python >=3.8
-    - ypywidgets >=0.7.0,<0.8.0
+    - ypywidgets >=0.9.0,<0.10.0
     - textual >=0.41.0
     - textual-plotext
     - pyte
