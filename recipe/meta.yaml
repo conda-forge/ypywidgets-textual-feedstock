@@ -1,5 +1,5 @@
 {% set name = "ypywidgets-textual" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ypywidgets_textual-{{ version }}.tar.gz
-  sha256: 8d99afc4e104e66ae40d2a16660d4db1bcce23cf4f8ab51ffc754081b8a24a4a
+  sha256: 865171e9931ba0a44265425413652819b52437db258aceb34c97a91e558e02b2
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - ypywidgets >=0.9.0,<0.10.0
-    - textual >=1.0.0,<2.0.0
+    - textual >=2.0.0,<3.0.0
     - textual-plotext
     - pyte
 
